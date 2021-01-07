@@ -1,0 +1,23 @@
+<%- include("./partials/header.ejs")  %> 
+<body>
+<%- include("./partials/navbar.ejs")  %> 
+
+<div class="container">
+  <div class="card mt-5">
+    <div class="card-header">
+      <h3 class="mb-3">Cadastrar membro</h3>
+    </div>
+    <div class="card-body">
+      <form action="/savemember" method="POST">
+      <label for="" class="mb-1">Nome:</label>
+      <input type="text" placeholder="Insira o nome do membro" class="form-control mb-3" name="memberName">
+      <label for="" class="mb-1">Cargo:</label>
+      <input type="text" placeholder="Insira o cargo do membro" class="form-control mb-3" name="memberRole">
+      <button class="btn btn-success">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+<%- include("./partials/footer.ejs")  %> 

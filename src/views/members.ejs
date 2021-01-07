@@ -1,0 +1,42 @@
+<%- include("./partials/header.ejs")  %> 
+<body>
+<%- include("./partials/navbar.ejs")  %> 
+
+<div class="container">
+  <h3 class="mt-5">Lista de membros</h3>
+  <table class="table my-5">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Cargo</th>
+        <th scope="col">Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% members.forEach(member => { %>
+        <tr>
+          <th scope="row"><%= member.id %></th>
+          <td><%= member.memberName %></td>
+          <td><%= member.memberRole %> </td>
+          <td class="d-flex">
+            <form action="/getmemberinfo" method="POST">
+              <input type="hidden" value="<%= member.id %>" name="memberID">
+              <button class="btn btn-primary">Editar</button>
+            </form>
+            <form action="/deletemember" method="POST" class="ms-1">
+              <input type="hidden" value="<%= member.id %>" name="memberID">
+              <button class="btn btn-danger">Deletar</button>
+            </form>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+
+  </table>
+  </div>
+</div>
+
+
+</body>
+<%- include("./partials/footer.ejs")  %> 
