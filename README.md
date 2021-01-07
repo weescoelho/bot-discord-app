@@ -4,7 +4,7 @@
   <!-- <a href="https://bot-discord-app.netlify.com">Demo</a> -->
 </div>
 
-<h1 align="center">DesenvolvimentoBOT</h1>
+<h1 align="center">Bot para Discord</h1>
 
 <p align="center">
   <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/weescoelho/bot-discord-app?color=56BEB8">
