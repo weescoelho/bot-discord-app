@@ -13,8 +13,6 @@
 
   <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/weescoelho/bot-discord-app?color=56BEB8">
 
-  <img alt="Licença" src="https://img.shields.io/github/license/weescoelho/bot-discord-app?color=56BEB8">
-
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/weescoelho/bot-discord-app?color=56BEB8" /> -->
 
   <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/weescoelho/bot-discord-app?color=56BEB8" /> -->
@@ -92,10 +90,6 @@ $ npm start
 
 # O app vai inicializar em <http://localhost:4000>
 ```
-
-## :memo: Licença ##
-
-Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 
 Feito com :heart: por <a href="https://github.com/weescoelho" target="_blank">Weslley Coelho</a>
